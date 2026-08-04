@@ -48,6 +48,11 @@
   border-bottom-color: var(--gold);
 }
 
+.site-nav a,
+.site-footer nav a {
+  color: var(--ink-soft);
+}
+
 .hero-flow circle,
 .problem-visual .nodes circle {
   fill: var(--gold);
@@ -62,9 +67,8 @@
   background: var(--gold);
 }
 
-/* Plum remains a restrained secondary note from the film palette. */
 .result h2 span {
-  color: #7b6678;
+  color: var(--gold-bright);
 }
 
 .result {
