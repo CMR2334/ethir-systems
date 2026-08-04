@@ -675,7 +675,7 @@ h3 {
   }
 
   .hero {
-    min-height: auto;
+    min-height: calc(100svh - 9.5rem);
     padding-top: 3rem;
     padding-bottom: 2rem;
     display: block;
@@ -917,6 +917,32 @@ h3 {
   .problem-copy p {
     max-width: 44rem;
     margin: 1.5rem 0 0;
+  }
+
+  .approach {
+    min-height: auto;
+    padding: 3rem var(--page-gutter);
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    align-items: start;
+    gap: 2rem;
+  }
+
+  .approach h2 {
+    max-width: none;
+    font-size: clamp(3.4rem, 7vw, 4.5rem);
+  }
+
+  .approach-intro p {
+    max-width: none;
+    margin-top: 1.25rem;
+    font-size: 1rem;
+  }
+
+  .connection-list li {
+    min-height: 4.25rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: clamp(1rem, 2.2vw, 1.2rem);
   }
 }
 
