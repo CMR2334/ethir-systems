@@ -723,13 +723,7 @@ h3 {
   }
 
   .hero-flow {
-    position: relative;
-    width: calc(100% + 3rem);
-    height: 9rem;
-    right: auto;
-    top: auto;
-    margin: 1.25rem -1.5rem -1.5rem;
-    overflow: hidden;
+    display: none;
   }
 
   .problem {
@@ -872,6 +866,57 @@ h3 {
   .site-footer p {
     grid-column: auto;
     margin-top: 0.5rem;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 980px) and (max-height: 500px) {
+  :root {
+    --page-gutter: 2rem;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .hero-copy {
+    width: 100%;
+    max-width: 52rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.5rem, 8vw, 4.75rem);
+  }
+
+  .hero-copy > p {
+    max-width: 48rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-flow,
+  .problem-visual {
+    display: none;
+  }
+
+  .problem {
+    min-height: auto;
+    padding: 3.5rem var(--page-gutter);
+    display: block;
+  }
+
+  .problem-copy {
+    max-width: 48rem;
+  }
+
+  .problem h2 {
+    max-width: 12ch;
+    font-size: clamp(3.4rem, 7vw, 4.5rem);
+  }
+
+  .problem-copy p {
+    max-width: 44rem;
+    margin: 1.5rem 0 0;
   }
 }
 
