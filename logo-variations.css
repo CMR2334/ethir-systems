@@ -1,0 +1,165 @@
+:root {
+  --page: #eef0eb;
+  --forest: #29352e;
+  --gold-bright: #e3b737;
+  --gold-deep: #8a5c00;
+  --ink: #20251f;
+  --muted: #667067;
+  --rule: #cdd2ca;
+  --serif: "Newsreader", Georgia, serif;
+  --sans: "DM Sans", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: var(--sans);
+}
+
+.logo-study {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: clamp(2.5rem, 6vw, 5.5rem) 0;
+}
+
+.study-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.62fr);
+  gap: 3rem;
+  align-items: end;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+h1 {
+  max-width: 12ch;
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  font-weight: 400;
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+}
+
+.study-header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.column-headings,
+.concept-row {
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.56fr) repeat(2, minmax(13rem, 1fr));
+  gap: 1rem;
+}
+
+.column-headings {
+  padding: 2rem 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.concept-row {
+  align-items: stretch;
+  padding: 1rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.concept-copy {
+  align-self: center;
+  padding: 1rem 1.5rem 1rem 0;
+}
+
+.concept-number {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--gold-deep);
+  font-family: var(--serif);
+  font-size: 1.15rem;
+}
+
+.concept-copy h2 {
+  margin: 0 0 0.45rem;
+  font-family: var(--serif);
+  font-size: 1.65rem;
+  font-weight: 400;
+}
+
+.concept-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.mark-card {
+  min-height: 15rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(41, 53, 46, 0.13);
+}
+
+.mark-card.forest {
+  --field: var(--forest);
+  --mark-ink: #ffffff;
+  --mark-gold: var(--gold-bright);
+  background: var(--field);
+}
+
+.mark-card.white {
+  --field: #ffffff;
+  --mark-ink: var(--forest);
+  --mark-gold: var(--gold-deep);
+  background: var(--field);
+}
+
+.mark-card svg {
+  width: min(62%, 9.5rem);
+  overflow: visible;
+}
+
+.mark-card .ink { fill: var(--mark-ink); }
+.mark-card .gold { fill: var(--mark-gold); }
+.mark-card .line {
+  fill: none;
+  stroke: var(--mark-ink);
+  stroke-linecap: round;
+}
+.mark-card .gold-line {
+  fill: none;
+  stroke: var(--mark-gold);
+  stroke-linecap: round;
+}
+.mark-card text {
+  font-family: var(--serif);
+  font-weight: 400;
+}
+
+.recommendation {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-left: 4px solid var(--gold-deep);
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.recommendation strong { color: var(--forest); }
+
+@media (max-width: 760px) {
+  .study-header,
+  .column-headings,
+  .concept-row { grid-template-columns: 1fr; }
+  .column-headings { display: none; }
+  .concept-row { gap: 0.75rem; padding: 1.75rem 0; }
+  .concept-copy { padding: 0 0 0.5rem; }
+  .mark-card { min-height: 13rem; }
+}
