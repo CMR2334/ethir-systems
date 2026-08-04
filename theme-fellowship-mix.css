@@ -1,0 +1,60 @@
+/*
+ * Ethir Systems — Fellowship palette study
+ *
+ * Load after styles.css. This alternate keeps the existing design intact while
+ * combining the earlier forest greens with the reference image's weathered
+ * slate blue, stone, and restrained plum.
+ */
+
+:root {
+  --paper: #f4f1e6;
+  --paper-deep: #ded7c1;
+  --ink: #29352e;
+  --ink-soft: #4b584d;
+  --mist: #dce3d6;
+  --line: #758073;
+  --line-soft: #b3bbae;
+  --copper: #586782;
+  --copper-dark: #3f4e68;
+  --rule: rgba(41, 53, 46, 0.24);
+}
+
+/* Green remains the anchor so the business identity stays grounded. */
+.button-primary {
+  background: #43513f;
+  color: #fefefe;
+}
+
+.button-primary:hover,
+.button-primary:focus-visible {
+  background: #29352e;
+  box-shadow: 0 10px 25px rgba(41, 53, 46, 0.2);
+}
+
+/* A faint sage band echoes the landscape without becoming scenic. */
+.approach {
+  background: #dce3d6;
+}
+
+/* Plum is deliberately limited to small moments from the film palette. */
+.service-number,
+.result h2 span {
+  color: #7b6678;
+}
+
+.result {
+  background: #29352e;
+}
+
+.result svg .result-accent {
+  stroke: #b9aa86;
+}
+
+.result svg circle {
+  fill: #b9aa86;
+}
+
+::selection {
+  background: #c9c0a4;
+  color: #29352e;
+}
