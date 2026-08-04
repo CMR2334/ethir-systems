@@ -17,6 +17,7 @@
   --copper: #586782;
   --copper-dark: #3f4e68;
   --gold: #e3b737;
+  --gold-dark: #756300;
   --gold-bright: #e3b737;
   --rule: rgba(41, 53, 46, 0.24);
 }
@@ -39,9 +40,13 @@
 }
 
 /* Gold marks decisions, destinations, and navigation without taking over. */
-.accent-dot,
-.service-number {
+.accent-dot {
   color: var(--gold);
+}
+
+.service-number,
+.site-footer p {
+  color: var(--gold-dark);
 }
 
 .hero .text-link {
