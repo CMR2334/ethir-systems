@@ -1,0 +1,60 @@
+/*
+ * Ethir Systems — Middle-earth white & gold palette study
+ *
+ * Load after styles.css. This alternate preserves the approved layout and the
+ * forest-green character of the Middle-earth study, but replaces parchment
+ * backgrounds with clean white and uses contrast-safe golds more prominently.
+ */
+
+:root {
+  --paper: #ffffff;
+  --paper-deep: #f7f8f5;
+  --ink: #2b2f22;
+  --ink-soft: #4a4d35;
+  --mist: #f3f5f0;
+  --line: #737765;
+  --line-soft: #c5c8bd;
+  --copper: #8a5c00;
+  --copper-dark: #654300;
+  --rule: rgba(43, 47, 34, 0.22);
+}
+
+/* Burnished gold remains legible on white; dark forest text keeps it calm. */
+.button-primary {
+  background: #c79b22;
+  color: #20251b;
+}
+
+.button-primary:hover,
+.button-primary:focus-visible {
+  background: #a9790f;
+  color: #15190f;
+  box-shadow: 0 10px 25px rgba(101, 67, 0, 0.2);
+}
+
+/* Replace parchment with a cool, nearly white sage surface. */
+.approach {
+  background: #f3f5f0;
+}
+
+/* The bright film-logo gold belongs only against the dark forest section. */
+.result {
+  background: #2b2f22;
+}
+
+.result h2 span {
+  color: #e3b737;
+}
+
+.result svg .result-accent {
+  stroke: #e3b737;
+}
+
+.result svg circle {
+  fill: #e3b737;
+}
+
+::selection {
+  background: #eedda0;
+  color: #2b2f22;
+}
