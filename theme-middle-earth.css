@@ -1,0 +1,60 @@
+/*
+ * Ethir Systems — Middle-earth-inspired palette study
+ *
+ * This file is intentionally additive. Load it after styles.css to test the
+ * alternate palette without changing the approved production theme.
+ * The layout, typography, spacing, copy, and component structure stay intact.
+ */
+
+:root {
+  --paper: #f7f3df;
+  --paper-deep: #f5eece;
+  --ink: #2b2f22;
+  --ink-soft: #4a4d35;
+  --mist: #e7e2c5;
+  --line: #7c8067;
+  --line-soft: #b9b89d;
+  --copper: #b87316;
+  --copper-dark: #8d5514;
+  --rule: rgba(43, 47, 34, 0.25);
+}
+
+/* Keep the main action grounded and readable; reserve gold for highlights. */
+.button-primary {
+  background: #4a4d35;
+  color: #fefefe;
+}
+
+.button-primary:hover,
+.button-primary:focus-visible {
+  background: #2b2f22;
+  box-shadow: 0 10px 25px rgba(43, 47, 34, 0.2);
+}
+
+/* A pale parchment band keeps the approach section airy, not medieval. */
+.approach {
+  background: #eee7c7;
+}
+
+/* Use the brighter logo gold only where it has sufficient dark contrast. */
+.result h2 span {
+  color: #e3b737;
+}
+
+.result svg .result-accent {
+  stroke: #e3b737;
+}
+
+.result svg circle {
+  fill: #e3b737;
+}
+
+/* The darker forest tone preserves the original section's visual weight. */
+.result {
+  background: #2b2f22;
+}
+
+::selection {
+  background: #eedda0;
+  color: #2b2f22;
+}
