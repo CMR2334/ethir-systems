@@ -16,6 +16,8 @@
   --line-soft: #b3bbae;
   --copper: #586782;
   --copper-dark: #3f4e68;
+  --gold: #835700;
+  --gold-bright: #e3b737;
   --rule: rgba(41, 53, 46, 0.24);
 }
 
@@ -36,8 +38,31 @@
   background: #dce3d6;
 }
 
-/* Plum is deliberately limited to small moments from the film palette. */
-.service-number,
+/* Gold marks decisions, destinations, and navigation without taking over. */
+.accent-dot,
+.service-number {
+  color: var(--gold);
+}
+
+.hero .text-link {
+  border-bottom-color: var(--gold);
+}
+
+.hero-flow circle,
+.problem-visual .nodes circle {
+  fill: var(--gold);
+}
+
+.connection-list li span {
+  background: var(--gold);
+}
+
+.about-divider,
+.about-divider span {
+  background: var(--gold);
+}
+
+/* Plum remains a restrained secondary note from the film palette. */
 .result h2 span {
   color: #7b6678;
 }
@@ -47,11 +72,11 @@
 }
 
 .result svg .result-accent {
-  stroke: #b9aa86;
+  stroke: var(--gold-bright);
 }
 
 .result svg circle {
-  fill: #b9aa86;
+  fill: var(--gold-bright);
 }
 
 ::selection {
