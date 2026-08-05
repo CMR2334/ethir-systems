@@ -687,7 +687,7 @@ h3 {
     display: grid;
     grid-template-rows: auto auto auto;
     align-content: start;
-    row-gap: 3rem;
+    row-gap: 2.25rem;
   }
 
   .hero h1 {
