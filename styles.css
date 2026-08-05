@@ -686,11 +686,12 @@ h3 {
     min-height: calc(100svh - 14.5rem);
     display: grid;
     grid-template-rows: auto auto auto;
-    align-content: space-between;
+    align-content: start;
+    row-gap: 3rem;
   }
 
   .hero h1 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
     font-size: clamp(3.2rem, 13.8vw, 3.5rem);
     line-height: 0.95;
   }
@@ -700,7 +701,7 @@ h3 {
   }
 
   .hero-copy > p {
-    margin-bottom: 1.85rem;
+    margin-bottom: 0;
     font-size: 1rem;
     line-height: 1.55;
   }
