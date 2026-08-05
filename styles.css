@@ -709,7 +709,7 @@ h3 {
   .hero-actions {
     align-items: stretch;
     flex-direction: column;
-    gap: 2.25rem;
+    gap: 1.25rem;
   }
 
   .button {
