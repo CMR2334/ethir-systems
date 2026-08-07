@@ -1,0 +1,20 @@
+.problem-visual .node-core {
+  opacity: 0.94;
+}
+
+.problem-visual .node-echo {
+  opacity: 0.16;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .problem-visual .node-echo {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .problem-visual svg {
+    width: 135%;
+    transform: translateX(-15%);
+  }
+}
