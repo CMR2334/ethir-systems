@@ -27,9 +27,9 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css?v=20260807b" />
+    <link rel="stylesheet" href="/styles.css?v=20260807c" />
     <link rel="stylesheet" href="/theme-fellowship-mix.css" />
-    <script src="/script.js" defer></script>
+    <script src="/script.js?v=20260807a" defer></script>
     <title>Ethir Systems — Systems That Make Work Flow.</title>
   </head>
   <body>
@@ -87,21 +87,32 @@
 
       <section class="problem" aria-labelledby="problem-title">
         <div class="problem-visual" aria-hidden="true">
-          <svg viewBox="0 0 760 430">
+          <svg viewBox="0 0 760 430" data-flow-motion>
             <g>
-              <path d="M0 40 C150 30 150 95 315 110 C470 125 590 210 760 225" />
-              <path d="M0 92 C120 80 205 120 330 145 C500 190 625 220 760 225" />
-              <path d="M0 150 C140 132 215 160 360 180 C520 205 640 223 760 225" />
-              <path d="M0 218 C135 198 240 220 390 230 C555 224 660 225 760 225" />
-              <path d="M0 290 C135 310 230 278 400 262 C560 235 650 226 760 225" />
-              <path d="M0 356 C150 378 252 315 430 288 C590 244 670 226 760 225" />
-              <path d="M0 410 C165 430 285 342 448 310 C605 250 680 227 760 225" />
+              <path id="problem-flow-1" d="M0 40 C150 30 150 95 315 110 C470 125 590 210 760 225" />
+              <path id="problem-flow-2" d="M0 92 C120 80 205 120 330 145 C500 190 625 220 760 225" />
+              <path id="problem-flow-3" d="M0 150 C140 132 215 160 360 180 C520 205 640 223 760 225" />
+              <path id="problem-flow-4" d="M0 218 C135 198 240 220 390 230 C555 224 660 225 760 225" />
+              <path id="problem-flow-5" d="M0 290 C135 310 230 278 400 262 C560 235 650 226 760 225" />
+              <path id="problem-flow-6" d="M0 356 C150 378 252 315 430 288 C590 244 670 226 760 225" />
+              <path id="problem-flow-7" d="M0 410 C165 430 285 342 448 310 C605 250 680 227 760 225" />
               <path class="problem-stream" d="M760 225 C980 225 1280 225 1700 225" />
             </g>
-            <g class="nodes">
-              <circle cx="122" cy="91" r="5" /><circle cx="263" cy="154" r="4" />
-              <circle cx="405" cy="229" r="5" /><circle cx="555" cy="245" r="4" />
-              <circle class="convergence-node" cx="760" cy="225" r="5" />
+            <g class="nodes motion-nodes">
+              <circle class="node-echo" r="3"><animateMotion dur="64s" begin="-6.9s" repeatCount="indefinite" keyPoints="0.06;0.9" keyTimes="0;1" calcMode="linear"><mpath href="#problem-flow-1" /></animateMotion></circle>
+              <circle class="node-core" r="4.5"><animateMotion dur="64s" begin="-7.6s" repeatCount="indefinite" keyPoints="0.06;0.9" keyTimes="0;1" calcMode="linear"><mpath href="#problem-flow-1" /></animateMotion></circle>
+              <circle class="node-echo" r="3"><animateMotion dur="68s" begin="-17.1s" repeatCount="indefinite" keyPoints="0.06;0.9" keyTimes="0;1" calcMode="linear"><mpath href="#problem-flow-2" /></animateMotion></circle>
+              <circle class="node-core" r="4.5"><animateMotion dur="68s" begin="-17.8s" repeatCount="indefinite" keyPoints="0.06;0.9" keyTimes="0;1" calcMode="linear"><mpath href="#problem-flow-2" /></animateMotion></circle>
+              <circle class="node-echo" r="3"><animateMotion dur="62s" begin="-24.4s" repeatCount="indefinite" keyPoints="0.06;0.9" keyTimes="0;1" calcMode="linear"><mpath href="#problem-flow-3" /></animateMotion></circle>
+              <circle class="node-core" r="4.5"><animateMotion dur="62s" begin="-25.1s" repeatCount="indefinite" keyPoints="0.06;0.9" keyTimes="0;1" calcMode="linear"><mpath href="#problem-flow-3" /></animateMotion></circle>
+              <circle class="node-echo" r="3"><animateMotion dur="70s" begin="-37.7s" repeatCount="indefinite" keyPoints="0.06;0.9" keyTimes="0;1" calcMode="linear"><mpath href="#problem-flow-4" /></animateMotion></circle>
+              <circle class="node-core" r="4.5"><animateMotion dur="70s" begin="-38.4s" repeatCount="indefinite" keyPoints="0.06;0.9" keyTimes="0;1" calcMode="linear"><mpath href="#problem-flow-4" /></animateMotion></circle>
+              <circle class="node-echo" r="3"><animateMotion dur="66s" begin="-44.8s" repeatCount="indefinite" keyPoints="0.06;0.9" keyTimes="0;1" calcMode="linear"><mpath href="#problem-flow-5" /></animateMotion></circle>
+              <circle class="node-core" r="4.5"><animateMotion dur="66s" begin="-45.5s" repeatCount="indefinite" keyPoints="0.06;0.9" keyTimes="0;1" calcMode="linear"><mpath href="#problem-flow-5" /></animateMotion></circle>
+              <circle class="node-echo" r="3"><animateMotion dur="72s" begin="-59.3s" repeatCount="indefinite" keyPoints="0.06;0.9" keyTimes="0;1" calcMode="linear"><mpath href="#problem-flow-6" /></animateMotion></circle>
+              <circle class="node-core" r="4.5"><animateMotion dur="72s" begin="-60s" repeatCount="indefinite" keyPoints="0.06;0.9" keyTimes="0;1" calcMode="linear"><mpath href="#problem-flow-6" /></animateMotion></circle>
+              <circle class="node-echo" r="3"><animateMotion dur="65s" begin="-61.2s" repeatCount="indefinite" keyPoints="0.06;0.9" keyTimes="0;1" calcMode="linear"><mpath href="#problem-flow-7" /></animateMotion></circle>
+              <circle class="node-core" r="4.5"><animateMotion dur="65s" begin="-61.9s" repeatCount="indefinite" keyPoints="0.06;0.9" keyTimes="0;1" calcMode="linear"><mpath href="#problem-flow-7" /></animateMotion></circle>
             </g>
           </svg>
         </div>

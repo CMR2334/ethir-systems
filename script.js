@@ -26,3 +26,18 @@ if (menuButton && nav) {
 document.querySelectorAll("[data-year]").forEach((element) => {
   element.textContent = new Date().getFullYear();
 });
+
+const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+function syncFlowMotion() {
+  document.querySelectorAll("[data-flow-motion]").forEach((svg) => {
+    if (motionPreference.matches && typeof svg.pauseAnimations === "function") {
+      svg.pauseAnimations();
+    } else if (typeof svg.unpauseAnimations === "function") {
+      svg.unpauseAnimations();
+    }
+  });
+}
+
+syncFlowMotion();
+motionPreference.addEventListener?.("change", syncFlowMotion);

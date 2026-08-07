@@ -311,8 +311,22 @@ h3 {
   fill: var(--copper);
 }
 
+.problem-visual .node-core {
+  opacity: 0.94;
+}
+
+.problem-visual .node-echo {
+  opacity: 0.16;
+}
+
 .problem-visual .problem-stream {
   opacity: 0.82;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .problem-visual .node-echo {
+    display: none;
+  }
 }
 
 .approach {
@@ -772,8 +786,8 @@ h3 {
   }
 
   .problem-visual svg {
-    width: 150%;
-    transform: translateX(-23%);
+    width: 135%;
+    transform: translateX(-15%);
   }
 
   .approach {
