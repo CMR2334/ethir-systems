@@ -58,7 +58,6 @@
   color: var(--ink-soft);
 }
 
-.hero-flow circle,
 .problem-visual .nodes circle {
   fill: var(--gold);
 }

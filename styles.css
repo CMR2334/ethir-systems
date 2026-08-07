@@ -230,30 +230,30 @@ h3 {
   font-size: 1.05rem;
 }
 
-.hero-flow {
+.hero-swoop {
   position: absolute;
   z-index: 1;
-  width: min(62vw, 900px);
-  height: auto;
-  right: -7.5rem;
-  top: 0.5rem;
-  overflow: visible;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 
-.hero-flow path {
+.hero-swoop .swoop-band {
+  fill: var(--mist);
+  opacity: 0.32;
+}
+
+.hero-swoop .swoop-line {
   fill: none;
   stroke: var(--line);
-  stroke-width: 1.45;
-  opacity: 0.88;
+  stroke-width: 1.2;
+  opacity: 0.52;
 }
 
-.hero-flow .flow-accent {
-  stroke: var(--copper);
-  stroke-width: 1.9;
-}
-
-.hero-flow circle {
-  fill: var(--copper);
+.hero-swoop .swoop-line-soft {
+  stroke: var(--line-soft);
+  opacity: 0.42;
 }
 
 .problem {
@@ -581,10 +581,6 @@ h3 {
     width: 68%;
   }
 
-  .hero-flow {
-    right: -18rem;
-  }
-
   .problem {
     grid-template-columns: 0.7fr 1.3fr;
   }
@@ -737,8 +733,11 @@ h3 {
     display: block;
   }
 
-  .hero-flow {
-    display: none;
+  .hero-swoop {
+    width: 185%;
+    height: 15rem;
+    inset: auto auto -1.5rem -62%;
+    opacity: 0.72;
   }
 
   .problem {
@@ -909,7 +908,7 @@ h3 {
     margin-bottom: 1.5rem;
   }
 
-  .hero-flow,
+  .hero-swoop,
   .problem-visual {
     display: none;
   }
